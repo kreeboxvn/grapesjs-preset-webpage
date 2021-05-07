@@ -24,58 +24,58 @@ export default (editor, config) => {
   eConfig.showDevices = 0
 
   pn.getPanels().reset([
-    {
-      id: "commands",
-      buttons: [{}]
-    },
-    {
-      id: "options",
-      buttons: [
-        {
-          id: swv,
-          command: swv,
-          context: swv,
-          className: "fa fa-square-o"
-        },
-        {
-          id: prv,
-          context: prv,
-          command: (e) => e.runCommand(prv),
-          className: "fa fa-eye"
-        },
-        {
-          id: ful,
-          command: ful,
-          context: ful,
-          className: "fa fa-arrows-alt"
-        },
-        {
-          id: expt,
-          className: "fa fa-code",
-          command: (e) => e.runCommand(expt)
-        },
-        {
-          id: "undo",
-          className: "fa fa-undo",
-          command: (e) => e.runCommand("core:undo")
-        },
-        {
-          id: "redo",
-          className: "fa fa-repeat",
-          command: (e) => e.runCommand("core:redo")
-        },
-        {
-          id: cmdImport,
-          className: "fa fa-download",
-          command: (e) => e.runCommand(cmdImport)
-        },
-        {
-          id: cmdClear,
-          className: "fa fa-trash",
-          command: (e) => e.runCommand(cmdClear)
-        }
-      ]
-    },
+    // {
+    //   id: "commands",
+    //   buttons: [{}]
+    // },
+    // {
+    //   id: "options",
+    //   buttons: [
+    //     {
+    //       id: swv,
+    //       command: swv,
+    //       context: swv,
+    //       className: "fa fa-square-o"
+    //     },
+    //     {
+    //       id: prv,
+    //       context: prv,
+    //       command: (e) => e.runCommand(prv),
+    //       className: "fa fa-eye"
+    //     },
+    //     {
+    //       id: ful,
+    //       command: ful,
+    //       context: ful,
+    //       className: "fa fa-arrows-alt"
+    //     },
+    //     {
+    //       id: expt,
+    //       className: "fa fa-code",
+    //       command: (e) => e.runCommand(expt)
+    //     },
+    //     {
+    //       id: "undo",
+    //       className: "fa fa-undo",
+    //       command: (e) => e.runCommand("core:undo")
+    //     },
+    //     {
+    //       id: "redo",
+    //       className: "fa fa-repeat",
+    //       command: (e) => e.runCommand("core:redo")
+    //     },
+    //     {
+    //       id: cmdImport,
+    //       className: "fa fa-download",
+    //       command: (e) => e.runCommand(cmdImport)
+    //     },
+    //     {
+    //       id: cmdClear,
+    //       className: "fa fa-trash",
+    //       command: (e) => e.runCommand(cmdClear)
+    //     }
+    //   ]
+    // },
     {
       id: "views",
       buttons: [
@@ -105,25 +105,25 @@ export default (editor, config) => {
   ])
 
   // Add devices buttons
-  const panelDevices = pn.addPanel({ id: "devices-c" })
-  panelDevices.get("buttons").add([
-    {
-      id: cmdDeviceDesktop,
-      command: cmdDeviceDesktop,
-      className: "fa fa-desktop",
-      active: 1
-    },
-    {
-      id: cmdDeviceTablet,
-      command: cmdDeviceTablet,
-      className: "fa fa-tablet"
-    },
-    {
-      id: cmdDeviceMobile,
-      command: cmdDeviceMobile,
-      className: "fa fa-mobile"
-    }
-  ])
+  // const panelDevices = pn.addPanel({ id: "devices-c" })
+  // panelDevices.get("buttons").add([
+  //   {
+  //     id: cmdDeviceDesktop,
+  //     command: cmdDeviceDesktop,
+  //     className: "fa fa-desktop",
+  //     active: 1
+  //   },
+  //   {
+  //     id: cmdDeviceTablet,
+  //     command: cmdDeviceTablet,
+  //     className: "fa fa-tablet"
+  //   },
+  //   {
+  //     id: cmdDeviceMobile,
+  //     command: cmdDeviceMobile,
+  //     className: "fa fa-mobile"
+  //   }
+  // ])
 
   const openBl = pn.getButton("views", obl)
   editor.on("load", () => openBl && openBl.set("active", 1))
