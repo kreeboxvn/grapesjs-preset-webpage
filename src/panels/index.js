@@ -76,32 +76,32 @@ export default (editor, config) => {
     //     }
     //   ]
     // },
-    {
-      id: "views",
-      buttons: [
-        {
-          id: osm,
-          command: osm,
-          active: true,
-          className: "fa fa-paint-brush"
-        },
-        {
-          id: otm,
-          command: otm,
-          className: "fa fa-cog"
-        },
-        {
-          id: ola,
-          command: ola,
-          className: "fa fa-bars"
-        },
-        // {
-        //   id: obl,
-        //   command: obl,
-        //   className: "fa fa-th-large"
-        // }
-      ]
-    }
+    // {
+    // id: "views",
+    // buttons: [
+    // {
+    //   id: osm,
+    //   command: osm,
+    //   active: true,
+    //   className: "fa fa-paint-brush"
+    // },
+    // {
+    //   id: otm,
+    //   command: otm,
+    //   className: "fa fa-cog"
+    // },
+    // {
+    //   id: ola,
+    //   command: ola,
+    //   className: "fa fa-bars"
+    // },
+    // {
+    //   id: obl,
+    //   command: obl,
+    //   className: "fa fa-th-large"
+    // }
+    // ]
+    // }
   ])
 
   // Add devices buttons
